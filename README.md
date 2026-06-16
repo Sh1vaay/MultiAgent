@@ -138,7 +138,7 @@ sequenceDiagram
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Sh1aay/multi-agent-planning-suite.git
+   git clone https://github.com/Sh1vaay/multi-agent-planning-suite.git
    cd multi-agent-planning-suite
    ```
 
