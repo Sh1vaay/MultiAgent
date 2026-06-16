@@ -1,0 +1,29 @@
+[project]
+name = "multiagent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Developer", email = "developer@example.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "chainlit>=2.11.1",
+    "crewai>=1.14.7",
+    "crewai-tools>=1.14.6",
+    "pandas>=2.2.0",
+    "tabulate>=0.9.0",
+    "langchain-huggingface",
+    "langchain-community",
+    "duckduckgo-search",
+]
+
+[project.scripts]
+multiagent = "multiagent:main"
+project = "multiagent.project_planning:main"
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
