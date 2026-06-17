@@ -10,13 +10,21 @@ requires-python = ">=3.11"
 dependencies = [
     "chainlit>=2.11.1",
     "crewai>=1.14.7",
-    "crewai-tools>=1.14.6",
+    "crewai-tools>=1.14.7",  # Updated
     "pandas>=2.2.0",
     "tabulate>=0.9.0",
     "langchain-huggingface",
     "langchain-community",
     "duckduckgo-search",
+    # Explicit secure versions to fix vulnerabilities
+    "cryptography>=44.0.2",
+    "pyyaml>=6.0.1",  # Safe YAML handling
+    "protobuf>=5.28.3",  # Latest secure version
+    "requests>=2.32.0",  # Fixes redirect vulnerability
+    "numpy>=2.2.3",  # Fixes buffer overflow
+    "pyjwt>=2.8.1",  # Latest with security fixes
 ]
+
 
 [project.scripts]
 multiagent = "multiagent:main"
